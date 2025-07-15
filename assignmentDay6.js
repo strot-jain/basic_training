@@ -50,7 +50,7 @@ function useless(x) {
 let actual2 = useless(5);
 console.log(actual2());
 
-// ----------------------------------------------
+// ----------------------------------------------------------
 
 //Question 2 Write a JavaScript program to test if 
 // the first character of a string is uppercase or not, if not then 
@@ -58,7 +58,7 @@ console.log(actual2());
 //Answer 2 
 function Isupper(str) {
     if (str[0] <= 'Z' && str[0] >= 'A') return str;
-    console.log("Mashakat Chalu");
+    console.log("Starting");
     let num;
     let dummy = "";
     let ch;
@@ -73,8 +73,12 @@ function Isupper(str) {
 console.log(Isupper("Hchak"));
 // Output: Hchak
 console.log(Isupper("hchak"));
-// Output: Mashakat Chalu
+// Output: Starting
 //  Hchak
+
+
+//----------------------------------------------------------------
+
 
 /* Question 3 Create a constructor function Calculator that creates objects with 3 methods:
 read() asks for two values using prompt and remembers them in object properties.
@@ -101,6 +105,11 @@ console.log(obj.mul());
 Enter the Value For b : 8
 17
 72*/
+
+
+//----------------------------------------------------
+
+
 //Deep clone Javascript Object (without using any internal methods of cloning).
 // All properties along with functions, prototypes should get cloned to target objects.
 function deepClone(obj) {
@@ -124,7 +133,7 @@ const obj = {
     }
 }
 let cloned = deepClone(obj);
-cloned.sobj.key = "Set hai Bhai";
+cloned.sobj.key = "Changed";
 cloned.arr[3][1] = 9;
 console.log(cloned);
 console.log(obj);
@@ -132,7 +141,7 @@ console.log(obj);
   key: 'Strot',
   Value: '1234',
   arr: [ 1, 2, 3, [ 9, 9, 9 ], 5 ],
-  sobj: { key: 'Set hai Bhai' }
+  sobj: { key: 'Changed' }
 }
 {
   key: 'Strot',
@@ -140,3 +149,5 @@ console.log(obj);
   arr: [ 1, 2, 3, [ 9, 8, 9 ], 5 ],
   sobj: { key: 'value' }
 }*/
+// ----------------------------------------------------------
+//                        END
